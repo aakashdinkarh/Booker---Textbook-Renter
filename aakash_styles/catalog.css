@@ -63,14 +63,9 @@
   cursor: pointer;
   font-family: "Roboto Condensed", sans-serif;
 }
-
 .scale1 {
   animation: animScale1 0.4s forwards;
   display: block;
-}
-.scale0 {
-  /* animation: animScale0 0.4s forwards; */
-  display: none;
 }
 @keyframes animScale1 {
   from {
@@ -80,15 +75,6 @@
     transform: scale(1);
   }
 }
-/* @keyframes animScale0 {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-} */
-
 @media screen and (max-width:800px){
     .card-row {
         width: 47%;

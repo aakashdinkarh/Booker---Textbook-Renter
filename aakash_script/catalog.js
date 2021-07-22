@@ -1,9 +1,9 @@
-function filterSelection(filter) {
-  let cata_img = document.querySelectorAll(".card_section > .card-row");
+function filterSelection(filter, selector) {
+  let cata_img = document.querySelectorAll(selector);
   var btn = document.querySelectorAll(".filterBtn > .btn");
-  for (let i = 0; i < btn.length; i++) {
-    btn[i].classList.remove("active");
-  }
+  // for (let i = 0; i < btn.length; i++) {
+  //   btn[i].classList.remove("active");
+  // }
   if (filter == "All") {
     for (let i = 0; i < cata_img.length; i++) {
       // cata_img[i].classList.remove("scale0");
@@ -18,5 +18,5 @@ function filterSelection(filter) {
       }
     }
   }
-  this.classList.add("active");
+  // this.classList.add("active");
 }
