@@ -1,12 +1,11 @@
 function filterSelection(filter, selector) {
   let cata_img = document.querySelectorAll(selector);
   var btn = document.querySelectorAll(".filterBtn > .btn");
-  // for (let i = 0; i < btn.length; i++) {
-  //   btn[i].classList.remove("active");
-  // }
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].classList.remove("active");
+  }
   if (filter == "All") {
     for (let i = 0; i < cata_img.length; i++) {
-      // cata_img[i].classList.remove("scale0");
       cata_img[i].classList.add("scale1");
     }
   } else {
@@ -18,5 +17,5 @@ function filterSelection(filter, selector) {
       }
     }
   }
-  // this.classList.add("active");
+  this.classList.add("active");
 }

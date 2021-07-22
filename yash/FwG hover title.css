@@ -80,7 +80,8 @@ body {
 .filterBtn .btn:not(:last-child){
   margin-right: 30px; 
 }
-.filterBtn .btn::after {
+.filterBtn .btn::after,
+.active::after {
   content: '';
   height: 1px;
   position: absolute;
@@ -90,7 +91,11 @@ body {
   left: 0;
   background-color: black;
 }
-.filterBtn .btn:hover {
+.filterBtn .btn.active::after {
+  width: 100%;
+}
+.filterBtn .btn:hover,
+.active {
   color: rgb(84, 84, 84);
 }
 .filterBtn .btn:hover::after {
