@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>Fullwidth Gallery Hover Title</title>
+    <title>Fullwidth Gallery Inside Title</title>
     <link rel="stylesheet" href="FwG, GG all.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
@@ -13,14 +13,18 @@
     <script src="../aakash_script/catalog.js"></script>
     <script src="../aakash_script/footer.js"></script>
     <style>
-      .gallery .hover-title {
+      .gallery .inside-title {
         position: absolute;
         z-index: 2;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        padding: 25% 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-size: small;
         cursor: pointer;
         color: white;
         transform: scale(0.7);
@@ -28,21 +32,43 @@
         background-color: rgba(47, 47, 47, 0.641);
         transition: all 0.2s;
       }
-      .gallery .image:hover .hover-title {
+      .gallery .image:hover .inside-title {
         transform: scale(1);
         opacity: 1;
       }
-      .gallery .image .hover-title h1.heading {
+      .gallery .image .inside-title h1.heading {
         padding: 0;
+        margin: 0;
+      }
+      .gallery .image .inside-title p {
+        text-align: initial;
       }
       @media screen and (max-width: 500px) {
-        .gallery .hover-title {
+        .gallery .inside-title {
           top: auto;
           bottom: 0;
           height: initial;
           padding: 0 10px;
           opacity: 1;
           transform: scale(1);
+        }
+      }
+      .content .gallery .image {
+        flex: none;
+        width: 32%;
+        margin-bottom: 2%;
+      }
+      @media screen and (max-width:700px) {
+        .content .gallery .image {
+          flex: none;
+          width: 48%;
+          margin-bottom: 4%;
+        }
+      }
+      @media screen and (max-width:450px){
+        .content .gallery .image {
+          flex: none;
+          width: 100%;
         }
       }
     </style>
@@ -54,7 +80,7 @@
       <p class="path">
         <a href="../index.html">Home</a><span class="arrow">&#8594;</span>
         <a href="../yash/FwG hover title.html">Pages</a><span class="arrow">&#8594;</span>
-        <a style="color: yellow" href="#">Fullwidth Gallery Hover Title</a>
+        <a style="color: yellow" href="#">Fullwidth Gallery Inside Title</a>
       </p>
     </div>
     <div class="content">
@@ -75,7 +101,7 @@
 
       <div class="gallery">
         <div onclick="openModal(); showCurrentSlide(0)" class="image New">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">PSYCHOLOGY</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -85,7 +111,7 @@
           <img src="yash_img/gallery-01-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(1)" class="image New">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">MARKETING</h1>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -95,7 +121,7 @@
           <img src="yash_img/gallery-02-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(2)" class="image New">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">PUBLIC RELATIONS</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -105,7 +131,7 @@
           <img src="yash_img/gallery-03-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(3)" class="image Used">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">WEB DESIGN</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -115,7 +141,7 @@
           <img src="yash_img/gallery-04-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(4)" class="image Used">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">WEB DEVELOPMENT</h1>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -125,7 +151,7 @@
           <img src="yash_img/gallery-05-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(5)" class="image Used">
-          <div class="hover-title">
+          <div class="inside-title">
             <h1 class="heading">NEWS</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui

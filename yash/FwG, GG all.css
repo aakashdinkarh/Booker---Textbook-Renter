@@ -104,7 +104,7 @@ body {
 .content .gallery {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  justify-content: space-between;
 }
 .content .gallery .image {
   display: none;
