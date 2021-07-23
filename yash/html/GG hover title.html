@@ -3,28 +3,24 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>Fullwidth Gallery Inside Title</title>
-    <link rel="stylesheet" href="FwG, GG all.css" />
+    <title>Grid Gallery Hover Title</title>
+    <link rel="stylesheet" href="../styles/FwG, GG all.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../aakash_styles/footer.css" />
-    <script src="../aakash_script/catalog.js"></script>
-    <script src="../aakash_script/footer.js"></script>
+    <link rel="stylesheet" href="../../aakash_styles/footer.css" />
+    <script src="../../aakash_script/catalog.js"></script>
+    <script src="../../aakash_script/footer.js"></script>
     <style>
-      .gallery .inside-title {
+      .gallery .hover-title {
         position: absolute;
         z-index: 2;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        font-size: small;
+        padding: 25% 10px;
         cursor: pointer;
         color: white;
         transform: scale(0.7);
@@ -32,19 +28,15 @@
         background-color: rgba(47, 47, 47, 0.641);
         transition: all 0.2s;
       }
-      .gallery .image:hover .inside-title {
+      .gallery .image:hover .hover-title {
         transform: scale(1);
         opacity: 1;
       }
-      .gallery .image .inside-title h1.heading {
+      .gallery .image .hover-title h1.heading {
         padding: 0;
-        margin: 0;
-      }
-      .gallery .image .inside-title p {
-        text-align: initial;
       }
       @media screen and (max-width: 500px) {
-        .gallery .inside-title {
+        .gallery .hover-title {
           top: auto;
           bottom: 0;
           height: initial;
@@ -76,11 +68,11 @@
   <body>
     <div class="top">
       <p class="subHeading">The Best Moments of Booker</p>
-      <h1 class="heading">FULLWIDTH GALLERY</h1>
+      <h1 class="heading">GRID GALLERY</h1>
       <p class="path">
-        <a href="../index.html">Home</a><span class="arrow">&#8594;</span>
-        <a href="../yash/FwG hover title.html">Pages</a><span class="arrow">&#8594;</span>
-        <a style="color: yellow" href="#">Fullwidth Gallery Inside Title</a>
+        <a href="../../index.html">Home</a><span class="arrow">&#8594;</span>
+        <a href="FwG hover title.html">Pages</a><span class="arrow">&#8594;</span>
+        <a style="color: yellow" href="#">Grid Gallery Hover Title</a>
       </p>
     </div>
     <div class="content">
@@ -101,64 +93,64 @@
 
       <div class="gallery">
         <div onclick="openModal(); showCurrentSlide(0)" class="image New">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">PSYCHOLOGY</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod
             </p>
           </div>
-          <img src="yash_img/gallery-01-original.jpg" />
+          <img src="../images/gallery-01-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(1)" class="image New">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">MARKETING</h1>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut
             </p>
           </div>
-          <img src="yash_img/gallery-02-original.jpg" />
+          <img src="../images/gallery-02-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(2)" class="image New">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">PUBLIC RELATIONS</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia
             </p>
           </div>
-          <img src="yash_img/gallery-03-original.jpg" />
+          <img src="../images/gallery-03-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(3)" class="image Used">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">WEB DESIGN</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod
             </p>
           </div>
-          <img src="yash_img/gallery-04-original.jpg" />
+          <img src="../images/gallery-04-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(4)" class="image Used">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">WEB DEVELOPMENT</h1>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut
             </p>
           </div>
-          <img src="yash_img/gallery-05-original.jpg" />
+          <img src="../images/gallery-05-original.jpg" />
         </div>
         <div onclick="openModal(); showCurrentSlide(5)" class="image Used">
-          <div class="inside-title">
+          <div class="hover-title">
             <h1 class="heading">NEWS</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia
             </p>
           </div>
-          <img src="yash_img/gallery-06-original.jpg" />
+          <img src="../images/gallery-06-original.jpg" />
         </div>
       </div>
       <script>
@@ -184,54 +176,54 @@
         <div class="slidesContainer">
           <div class="mySlides">
             <div class="slideNumber">1 / 6</div>
-            <img src="yash_img/gallery-01-original.jpg" />
+            <img src="../images/gallery-01-original.jpg" />
           </div>
           <div class="mySlides">
             <div class="slideNumber">2 / 6</div>
-            <img src="yash_img/gallery-02-original.jpg" />
+            <img src="../images/gallery-02-original.jpg" />
           </div>
           <div class="mySlides">
             <div class="slideNumber">3 / 6</div>
-            <img src="yash_img/gallery-03-original.jpg" />
+            <img src="../images/gallery-03-original.jpg" />
           </div>
           <div class="mySlides">
             <div class="slideNumber">4 / 6</div>
-            <img src="yash_img/gallery-04-original.jpg" />
+            <img src="../images/gallery-04-original.jpg" />
           </div>
           <div class="mySlides">
             <div class="slideNumber">5 / 6</div>
-            <img src="yash_img/gallery-05-original.jpg" />
+            <img src="../images/gallery-05-original.jpg" />
           </div>
           <div class="mySlides">
             <div class="slideNumber">6 / 6</div>
-            <img src="yash_img/gallery-06-original.jpg" />
+            <img src="../images/gallery-06-original.jpg" />
           </div>
         </div>
 
         <!-- Thumbnail image controls -->
         <div class="modal-thumb">
           <img
-            src="yash_img/gallery-01-original.jpg"
+            src="../images/gallery-01-original.jpg"
             onclick="showCurrentSlide(0)"
           />
           <img
-            src="yash_img/gallery-02-original.jpg"
+            src="../images/gallery-02-original.jpg"
             onclick="showCurrentSlide(1)"
           />
           <img
-            src="yash_img/gallery-03-original.jpg"
+            src="../images/gallery-03-original.jpg"
             onclick="showCurrentSlide(2)"
           />
           <img
-            src="yash_img/gallery-04-original.jpg"
+            src="../images/gallery-04-original.jpg"
             onclick="showCurrentSlide(3)"
           />
           <img
-            src="yash_img/gallery-05-original.jpg"
+            src="../images/gallery-05-original.jpg"
             onclick="showCurrentSlide(4)"
           />
           <img
-            src="yash_img/gallery-06-original.jpg"
+            src="../images/gallery-06-original.jpg"
             onclick="showCurrentSlide(5)"
           />
         </div>
